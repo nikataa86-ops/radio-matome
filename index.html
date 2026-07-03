@@ -1,60 +1,29 @@
 <style>
-  body { background-color: #f3f3f3; font-family: sans-serif; margin: 0; padding: 15px; }
-  .radio-container { max-width: 100%; margin: 0 auto; } /* 横幅を画面いっぱいに広げる */
+  body { background-color: #f3e5f5; font-family: sans-serif; margin: 0; padding: 25px; }
+  .radio-container { max-width: 600px; margin: 0 auto; }
   
-  h2 { color: #333; text-align: left; margin-bottom: 20px; font-size: 1.6rem; padding-left: 10px; }
+  /* タイトルサイズのみ拡大 */
+  h2 { color: #7b1fa2; text-align: center; margin-bottom: 40px; font-size: 2.8rem; }
   
-  /* カードの角を大きく丸くし、内側の余白を大きくしてサイズを出す */
-  details { 
-    background: white; 
-    border-radius: 20px; 
-    padding: 20px 25px; 
-    margin-bottom: 15px; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05); 
-  }
+  /* カード全体のサイズ・余白を拡大 */
+  details { background: white; border-radius: 25px; padding: 20px 30px; margin-bottom: 25px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
   
-  /* タイトル（年月）のサイズ */
-  summary { 
-    font-weight: bold; 
-    color: #333; 
-    padding: 10px 5px; 
-    cursor: pointer; 
-    outline: none; 
-    list-style: none; 
-    font-size: 1.5rem; 
-  }
-  summary::after { content: ' ▼'; float: right; font-size: 1.2rem; color: #999; }
+  /* 中のタイトル（年月）のサイズ拡大 */
+  summary { font-weight: bold; color: #7b1fa2; padding: 15px 5px; cursor: pointer; outline: none; list-style: none; font-size: 2.0rem; }
+  summary::after { content: ' ▼'; float: right; font-size: 1.6rem; color: #ba68c8; }
   
-  /* 中身の各項目 */
-  .card-item { 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 25px 0; 
-    border-top: 1px solid #eee; 
-  }
+  /* 項目間の余白を拡大 */
+  .card-item { display: flex; justify-content: space-between; align-items: center; padding: 30px 0; border-top: 1px solid #f3e5f5; }
   
   .info { display: flex; flex-direction: column; flex: 1; }
-  .date { font-size: 1.1rem; color: #888; font-weight: bold; margin-bottom: 5px; }
-  .title { font-size: 1.4rem; color: #333; line-height: 1.4; font-weight: 500; }
   
-  /* ボタンの形状を image_9.png のような横長角丸に変更 */
-  .x-btn { 
-    background-color: #00bfa5; 
-    color: white; 
-    text-decoration: none; 
-    padding: 10px 20px; 
-    border-radius: 20px; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    font-size: 1.1rem; 
-    margin-left: 15px; 
-    flex-shrink: 0; 
-    font-weight: bold; 
-  }
+  /* 日付・項目のサイズ拡大 */
+  .date { font-size: 1.4rem; color: #9c27b0; font-weight: bold; }
+  .title { font-size: 1.8rem; color: #333; margin-top: 10px; line-height: 1.4; }
+  
+  /* ボタンのサイズ拡大 */
+  .x-btn { background-color: #ba68c8; color: white; text-decoration: none; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.6rem; margin-left: 20px; flex-shrink: 0; }
 </style>
-
 
 <div class="radio-container">
   <h2>📻 菊池風磨hoursz📸まとめ</h2>
