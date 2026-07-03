@@ -1,27 +1,29 @@
 <style>
   body { background-color: #f3e5f5; font-family: sans-serif; margin: 0; padding: 30px; }
-  .radio-container { max-width: 700px; margin: 0 auto; }
   
-  /* タイトルサイズをさらに拡大 */
-  h2 { color: #7b1fa2; text-align: center; margin-bottom: 50px; font-size: 3.5rem; }
+  /* 横幅を広げてタイトルを一列に収まりやすくしました */
+  .radio-container { max-width: 900px; margin: 0 auto; }
   
-  /* カード全体の余白と枠をさらにゆったりと */
+  /* メインタイトル：サイズを調整しつつ、長い場合も一行に収まるように */
+  h2 { color: #7b1fa2; text-align: center; margin-bottom: 50px; font-size: 3.2rem; white-space: nowrap; }
+  
+  /* カード全体の枠 */
   details { background: white; border-radius: 35px; padding: 35px 45px; margin-bottom: 35px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
   
-  /* 年月表示をさらに大きく */
+  /* 年月表示 */
   summary { font-weight: bold; color: #7b1fa2; padding: 20px 10px; cursor: pointer; outline: none; list-style: none; font-size: 2.5rem; }
   summary::after { content: ' ▼'; float: right; font-size: 2.0rem; color: #ba68c8; }
   
-  /* 項目間の余白を拡大 */
+  /* 項目部分 */
   .card-item { display: flex; justify-content: space-between; align-items: center; padding: 40px 0; border-top: 2px solid #f3e5f5; }
   
   .info { display: flex; flex-direction: column; flex: 1; }
   
-  /* 日付・タイトルサイズをさらに拡大 */
+  /* 各項目タイトル：ここも一列に収まりやすく調整 */
   .date { font-size: 1.8rem; color: #9c27b0; font-weight: bold; }
-  .title { font-size: 2.2rem; color: #333; margin-top: 15px; line-height: 1.5; }
+  .title { font-size: 2.2rem; color: #333; margin-top: 15px; line-height: 1.5; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   
-  /* ボタンサイズを拡大 */
+  /* ボタン */
   .x-btn { background-color: #ba68c8; color: white; text-decoration: none; width: 80px; height: 80px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 2.0rem; margin-left: 30px; flex-shrink: 0; }
 </style>
 
