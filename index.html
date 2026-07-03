@@ -1,30 +1,30 @@
 <style>
-  body { background-color: #f3e5f5; font-family: sans-serif; margin: 0; padding: 15px; }
+  body { background-color: #f3e5f5; font-family: sans-serif; margin: 0; padding: 20px; }
   .radio-container { max-width: 500px; margin: 0 auto; }
   
-  /* タイトルをさらに大きく */
-  h2 { color: #7b1fa2; text-align: center; margin-bottom: 25px; font-size: 2.2rem; }
+  /* メインタイトル */
+  h2 { color: #7b1fa2; text-align: center; margin-bottom: 30px; font-size: 2.6rem; font-weight: bold; }
   
-  /* カード全体の余白と見た目 */
-  details { background: white; border-radius: 15px; padding: 10px 20px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+  /* リスト全体 */
+  details { background: white; border-radius: 20px; padding: 15px 25px; margin-bottom: 20px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); }
   
-  /* 年月の表示（summary）を大きく */
-  summary { font-weight: bold; color: #7b1fa2; padding: 15px 5px; cursor: pointer; outline: none; list-style: none; font-size: 1.4rem; }
-  summary::after { content: ' ▼'; float: right; font-size: 1rem; color: #ba68c8; }
+  /* 年月（開閉ボタン） */
+  summary { font-weight: bold; color: #7b1fa2; padding: 20px 5px; cursor: pointer; outline: none; list-style: none; font-size: 1.8rem; }
+  summary::after { content: ' ▼'; float: right; font-size: 1.4rem; color: #ba68c8; }
   
-  /* 中身の各項目 */
-  .card-item { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-top: 2px solid #f3e5f5; }
+  /* 各項目（タイトルと日付） */
+  .card-item { display: flex; justify-content: space-between; align-items: center; padding: 25px 0; border-top: 3px solid #f3e5f5; }
   
   .info { display: flex; flex-direction: column; flex: 1; }
   
-  /* 日付を大きく */
-  .date { font-size: 1rem; color: #9c27b0; font-weight: bold; }
+  /* 日付 */
+  .date { font-size: 1.2rem; color: #9c27b0; font-weight: bold; margin-bottom: 5px; }
   
-  /* タイトルを大きくし、読みやすく */
-  .title { font-size: 1.35rem; color: #333; margin-top: 8px; line-height: 1.4; font-weight: 500; }
+  /* 記事タイトル */
+  .title { font-size: 1.6rem; color: #333; line-height: 1.5; font-weight: 600; }
   
-  /* ボタンも少し大きく */
-  .x-btn { background-color: #ba68c8; color: white; text-decoration: none; width: 45px; height: 45px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.2rem; margin-left: 15px; flex-shrink: 0; }
+  /* Xボタン */
+  .x-btn { background-color: #ba68c8; color: white; text-decoration: none; width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.5rem; margin-left: 20px; flex-shrink: 0; font-weight: bold; }
 </style>
 
 <div class="radio-container">
