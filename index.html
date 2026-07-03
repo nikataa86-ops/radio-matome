@@ -1,37 +1,28 @@
 <style>
-  body { background-color: #f3e5f5; font-family: sans-serif; margin: 0; padding: 15px; }
-  .radio-container { max-width: 600px; margin: 0 auto; } /* 幅を少し抑えてスマホで制御しやすくします */
+  body { background-color: #f3e5f5; font-family: sans-serif; margin: 0; padding: 30px; }
+  .radio-container { max-width: 700px; margin: 0 auto; }
   
-  h2 { color: #7b1fa2; text-align: center; margin-bottom: 30px; font-size: 2.2rem; }
+  /* タイトルサイズをさらに拡大 */
+  h2 { color: #7b1fa2; text-align: center; margin-bottom: 50px; font-size: 3.5rem; }
   
-  details { background: white; border-radius: 25px; padding: 20px 25px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
+  /* カード全体の余白と枠をさらにゆったりと */
+  details { background: white; border-radius: 35px; padding: 35px 45px; margin-bottom: 35px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); }
   
-  summary { font-weight: bold; color: #7b1fa2; padding: 15px 5px; cursor: pointer; outline: none; list-style: none; font-size: 1.8rem; }
-  summary::after { content: ' ▼'; float: right; font-size: 1.4rem; color: #ba68c8; }
+  /* 年月表示をさらに大きく */
+  summary { font-weight: bold; color: #7b1fa2; padding: 20px 10px; cursor: pointer; outline: none; list-style: none; font-size: 2.5rem; }
+  summary::after { content: ' ▼'; float: right; font-size: 2.0rem; color: #ba68c8; }
   
-  /* 項目部分：テキストとボタンをうまく並べる設定 */
-  .card-item { 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 20px 0; 
-    border-top: 2px solid #f3e5f5; 
-    gap: 15px; /* テキストとボタンの間に隙間を作ります */
-  }
+  /* 項目間の余白を拡大 */
+  .card-item { display: flex; justify-content: space-between; align-items: center; padding: 40px 0; border-top: 2px solid #f3e5f5; }
   
-  .info { display: flex; flex-direction: column; flex: 1; min-width: 0; } /* min-width: 0 でテキストが枠からはみ出すのを防ぎます */
+  .info { display: flex; flex-direction: column; flex: 1; }
   
-  .date { font-size: 1.2rem; color: #9c27b0; font-weight: bold; }
-  .title { 
-    font-size: 1.5rem; 
-    color: #333; 
-    margin-top: 5px; 
-    line-height: 1.4; 
-    word-wrap: break-word; /* 長い場合は自動で改行させます */
-  }
+  /* 日付・タイトルサイズをさらに拡大 */
+  .date { font-size: 1.8rem; color: #9c27b0; font-weight: bold; }
+  .title { font-size: 2.2rem; color: #333; margin-top: 15px; line-height: 1.5; }
   
-  /* ボタンのサイズを少しだけ調整して、テキストを圧迫しないようにします */
-  .x-btn { background-color: #ba68c8; color: white; text-decoration: none; width: 50px; height: 50px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 1.3rem; flex-shrink: 0; }
+  /* ボタンサイズを拡大 */
+  .x-btn { background-color: #ba68c8; color: white; text-decoration: none; width: 80px; height: 80px; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-size: 2.0rem; margin-left: 30px; flex-shrink: 0; }
 </style>
 
 <div class="radio-container">
